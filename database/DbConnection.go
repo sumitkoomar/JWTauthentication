@@ -14,19 +14,14 @@ import (
 
 var mongoURL string
 
-func init() {
-	// Load environment variables from .env file
+func DBinstance() *mongo.Client {
+
 	if err := godotenv.Load(); err != nil {
 		log.Fatal("Error loading .env file:", err)
 	}
 
 	// Assign the value of MONGODB_URI
 	mongoURL = os.Getenv("MONGODB_URI")
-}
-
-func DBinstance() *mongo.Client {
-
-	mongoURL := "mongodb+srv://root:root@cluster0.1p7ltsy.mongodb.net/?retryWrites=true&w=majority"
 
 	ctx, cancel := context.WithTimeout(context.Background(), 20*time.Second)
 	defer cancel()
