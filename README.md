@@ -17,6 +17,9 @@ RESTful API endpoints for seamless integration with frontend applications.
 - Dockerized for easy deployment and scalability in microservices architectures.
 - RESTful API endpoints for seamless integration with frontend applications.
 
+## Docker Hub Repository
+Find the Docker image for this project on Docker Hub: sumitkoomar/go-jwt-authentication
+
 ## Installation
 
 1. Clone the repository:
@@ -25,8 +28,7 @@ RESTful API endpoints for seamless integration with frontend applications.
    git clone https://github.com/sumitkoomar/JWTauthentication.git
 
 
-## Docker Hub Repository
-Find the Docker image for this project on Docker Hub: sumitkoomar/go-jwt-authentication
+
 
 
 
